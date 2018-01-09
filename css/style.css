@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body{
-	font-family: Dancing Script;
+	font-family: Shadows Into Light;
 }
 
 .container{
@@ -10,7 +12,12 @@ body{
 	border: 1px solid;
 	margin:0 auto;
 	text-align: center;
+	padding: 100px;
 }
 .quote{
 	font-size: 30px;
+}
+.quoteAuthor{
+	font-family: Roboto;
+	font-size: 20px;
 }

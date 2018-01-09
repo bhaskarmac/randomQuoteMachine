@@ -9,11 +9,10 @@ $(document).ready(function () {
 			data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
 			success: function(response) {
 				console.log('response=>', response);
-				$('.quote').html(response.quoteText);
+				$('.quote').html('<i class="fa fa-quote-left"></i> ' + response.quoteText);
 				$('.quoteAuthor').html(response.quoteAuthor);
 			}
 		});
-		
 	}
 
 	$('#btnRandomQuote').click(function () {
