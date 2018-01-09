@@ -9,6 +9,8 @@ $(document).ready(function () {
 			data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
 			success: function(response) {
 				console.log('response=>', response);
+				$('.quote').html(response.quoteText);
+				$('.quoteAuthor').html(response.quoteAuthor);
 			}
 		});
 		
