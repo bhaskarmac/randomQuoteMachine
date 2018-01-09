@@ -10,7 +10,7 @@ $(document).ready(function () {
 			success: function(response) {
 				console.log('response=>', response);
 				$('.quote').html('<i class="fa fa-quote-left"></i> ' + response.quoteText);
-				$('.quoteAuthor').html(response.quoteAuthor);
+				$('.quoteAuthor').html('- ' + response.quoteAuthor);
 			}
 		});
 	}
